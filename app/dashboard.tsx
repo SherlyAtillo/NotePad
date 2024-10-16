@@ -4,7 +4,9 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useRouter } from 'expo-router';  
 import { ThemedText } from '@/components/ThemedText';  
 import { ThemedView } from '@/components/ThemedView';  
-import { useAuth } from '../context/AuthContext';  
+import { useAuth } from './context/AuthContext'; 
+import { ThemeToggle } from '@/components/ThemeToggle'; 
+import { ThemeContext } from './context/ThemeContext';
 
 type Note = {  
   id: string;  

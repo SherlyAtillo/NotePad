@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { StyleSheet, TextInput, TouchableOpacity, Alert } from 'react-native';  
 import { ThemedText } from '@/components/ThemedText';  
 import { ThemedView } from '@/components/ThemedView';  
-import { useAuth } from '../context/AuthContext'; // Ensure the import path is correct  
+import { useAuth } from '../context/AuthContext';   
 import { useRouter } from 'expo-router';  
 
 export default function LoginScreen() {  
   const [username, setUsername] = useState('');  
   const [password, setPassword] = useState('');  
-  const { login } = useAuth(); // This should now correctly provide the login function  
+  const { login } = useAuth(); 
   const router = useRouter();  
 
   const handleLogin = () => {  

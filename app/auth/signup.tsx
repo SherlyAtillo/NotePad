@@ -17,7 +17,6 @@ export default function SignupScreen() {
       Alert.alert('Error', 'Passwords do not match');  
       return;  
     }  
-    // Implement actual signup logic here  
     Alert.alert('Success', 'You can now login', [  
       { text: 'OK', onPress: () => router.replace('/auth/login') },  
     ]);  
